@@ -1,5 +1,11 @@
 ############################################################
 # Simple Python program that repeatedly reads the Grove
+# Ultrasonic Ranger connected to GrovePi port D4, which is suspended
+# above a recycle bin, and writes to Pi Land whether the bin
+# needs to be emptied, updating immediately.
+#
+# Edited from:
+# Simple Python program that repeatedly reads the Grove
 # Ultrasonic Ranger connected to GrovePi port D4 and
 # writes the current value to Pi Land. 
 #

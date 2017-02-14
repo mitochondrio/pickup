@@ -1,5 +1,11 @@
 ############################################################
 # Simple Python program that repeatedly reads the Grove
+# Ultrasonic Ranger connected to GrovePi port D4, which is suspended
+# above a recycle bin, and writes to Pi Land whether the bin
+# needs to be emptied, updating after 30 seconds.
+#
+# Edited from:
+# Simple Python program that repeatedly reads the Grove
 # Ultrasonic Ranger connected to GrovePi port D4 and
 # writes the current value to Pi Land. 
 #
@@ -33,7 +39,7 @@ ranger = 4                             # Ultrasonic Ranger is connected to port 
 baseurl = "http://piland.socialdevices.io"
 baseurl = baseurl + "/" + str(room) + "/write/" + str(slot) + "?name=" + name + "&value="
 
-timer = 4            # How long to wait after the been has been full to change the status, in seconds
+timer = 30    # How long to wait after the bin has been full to update the status, in seconds
 pickup_timer = 0
 delay = 2
 
